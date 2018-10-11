@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="DVidyaERP.ProfilePage" 
+    xmlns:local="clr-namespace:DVidyaERP.Renderer"
+    xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms" 
+    xmlns:Cimage="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions" 
+    xmlns:custom="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms" 
+    xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="btn1" Name="btnaddtreatment" Text="Edit" Priority="0" Clicked="Handle_EditClicked" />
+        <!--<ToolbarItem x:Name="btn2" Name="btnaddtreatments" Text="Cancel" Priority="1" Clicked="Handle_CancelClicked" />-->
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" BackgroundColor="#F8FCFD" Padding="0" Margin="0,0,0,0" VerticalOptions="FillAndExpand">
+            <RelativeLayout HeightRequest="120" BackgroundColor="White" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0">
+               <!-- <custom:CachedImage x:Name="ProfilePic" Source="{Binding imageSource}" HeightRequest="120" WidthRequest="120" VerticalOptions="CenterAndExpand">
+                    <custom:CachedImage.Transformations>
+                        <fftransformations:CircleTransformation />
+                    </custom:CachedImage.Transformations>
+                </custom:CachedImage>-->
+             <Cimage:CircleImage x:Name="ProfilePic" FillColor="White" Source="{Binding imageSource}" HeightRequest="120" WidthRequest="120" VerticalOptions="CenterAndExpand">
+             </Cimage:CircleImage>
+            </RelativeLayout>
+            <StackLayout Margin="0,15,0,0" BackgroundColor="#F8FCFD">
+                <Label x:Name="LblUserInfo" Text="{Binding Address}" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+            <TableView Intent="Form" RowHeight="70">
+                <TableRoot>
+                    <TableSection Title="USER INFORMATION">
+                        <ViewCell>
+                            <StackLayout VerticalOptions="CenterAndExpand" Spacing="2" HorizontalOptions="FillAndExpand" BackgroundColor="White" Orientation="Vertical">
+                                <Label Margin="15,0,0,0" VerticalOptions="Center" Text="First Name" TextColor="Gray" FontSize="14" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                                <local:BorderLessEntry x:Name="entryName" Text="{Binding DisplayName}" IsEnabled="false" Margin="15,0,0,0" VerticalOptions="Center" TextColor="Black" FontSize="16" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout VerticalOptions="CenterAndExpand" Spacing="2" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                                <Label Margin="15,0,0,0" Text="Email" TextColor="Gray" FontSize="14" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                                <local:BorderLessEntry x:Name="entryEmail" Text="{Binding DisplayemailID}" IsEnabled="false" Margin="15,0,0,0" TextColor="Black" FontSize="16" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout VerticalOptions="CenterAndExpand" Spacing="2" HorizontalOptions="FillAndExpand" BackgroundColor="White" Orientation="Vertical">
+                                <Label Margin="15,0,0,0" VerticalOptions="Center" Text="Mobile No" TextColor="Gray" FontSize="14" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                                <local:BorderLessEntry x:Name="entryMobileNo" Text="{Binding MobileNo}" IsEnabled="false" Margin="15,0,0,0" VerticalOptions="Center" TextColor="Black" FontSize="16" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout VerticalOptions="CenterAndExpand" Spacing="1" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                             <!--<local:BorderLessPicker BackgroundColor="Transparent" Title="Select City" x:Name="Entry_CityName" ItemsSource="{Binding CityList}" ItemDisplayBinding="{Binding Name}" SelectedItem="{Binding SelectedCity}" TextColor="Black" HorizontalOptions="FillAndExpand" HeightRequest="40" />-->
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:DVidyaERP"
+    x:Class="DVidyaERP.ConfigurePage">
+	<ContentPage.Content>
+        <ScrollView HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+         <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Label FontSize="8" Text="if you want to download Meta Data. Click on this..">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS">Rockwell-Light</On>
+                            <On Platform="Android">RCKWLL.ttf#RCKWLL</On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+        </Label>
+        <Button Command="{Binding MetaDataCommand}" BackgroundColor="#EA3175" BorderWidth="1" 
+                BorderColor="White"  BorderRadius="20" TextColor="White" 
+                Text="META DATA"
+                WidthRequest="300" FontSize="14"
+                HorizontalOptions="Center">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS">Maison Neue</On>
+                            <On Platform="Android">MAISONNEUE-BOOK.TTF#MAISONNEUE-BOOK</On>
+                        </OnPlatform>
+                    </Button.FontFamily>
+        </Button>
+        <Label FontSize="8" Text="if you want to download Student Data. Click on this..">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS">Rockwell-Light</On>
+                            <On Platform="Android">RCKWLL.ttf#RCKWLL</On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+        </Label>
+        <Button Command="{Binding StudentDataCommand}" BackgroundColor="#EA3175" BorderWidth="1" 
+                BorderColor="White"  BorderRadius="20" TextColor="White" 
+                Text="STUDENT DATA"
+                WidthRequest="300" FontSize="14"
+                HorizontalOptions="Center" >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS">Maison Neue</On>
+                            <On Platform="Android">MAISONNEUE-BOOK.TTF#MAISONNEUE-BOOK</On>
+                        </OnPlatform>
+                    </Button.FontFamily>
+        </Button>
+                
+         </StackLayout>
+        </ScrollView>
+	</ContentPage.Content>
+</ContentPage>

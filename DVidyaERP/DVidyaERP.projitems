@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{7BFFF8CA-F243-4D09-B649-EABE58B4CDCE}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>DVidyaERP</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Item.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\connectionPage.xaml.cs">
+      <DependentUpon>connectionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Constant\Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Constant\ConstantsMSG.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Effects\ShowHidePassEffect.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\LogInPage.xaml.cs">
+      <DependentUpon>LogInPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MenuPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\RootPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\MyProfile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Style\MenuCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Style\SettingsUserView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\TakeAttendancePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\ShowAttendancePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ProfileViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ICPFeeds.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomControl\CustomPicker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomControl\ImageButton.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomControl\ImageButtonFOB.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomControl\SelectableViewCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomControl\MultiSelectListView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomControl\SelectableItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomControl\SelectableObservableCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ItemCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomControl\NonSelectableViewCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Global_Method_Propertise\Static_method.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\DVidyaDataBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\GeneralMethod.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\GeneralProperties.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Settings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ConnectionPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Global_Method_Propertise\enumUserType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LogInPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DependencyServices\IDependencyService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Behavior\CompareValidationBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Behavior\DateValidationBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Behavior\EmailValidatorBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Behavior\MaxLengthValidatorBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Behavior\NumberValidationBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Behavior\PasswordValidationBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\ConfigurePage.xaml.cs">
+      <DependentUpon>ConfigurePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ConfigruePageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\IPicture.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DataBindation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AttendanceModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\TakeAttendanceViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\MasterChooseDetails.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\GetStudentsPagePopUp.xaml.cs">
+      <DependentUpon>GetStudentsPagePopUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Data\IDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\GetStudentsPopUpViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\TimeTablePage.xaml.cs">
+      <DependentUpon>TimeTablePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\TimeTableModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Weak.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\TimeTableGroup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\DemoPage.xaml.cs">
+      <DependentUpon>DemoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\NoticePage.xaml.cs">
+      <DependentUpon>NoticePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\NoticeViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DependencyServices\IDependencyServiceForAutoRun.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\ProfilePage.xaml.cs">
+      <DependentUpon>ProfilePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Renderer\AutoCompleteEntry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderer\BorderLessEntry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderer\BorderLessPicker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\connectionPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\LogInPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\ConfigurePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\GetStudentsPagePopUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\TimeTablePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\DemoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\NoticePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\ProfilePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Pages\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Views\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Style\" />
+    <Folder Include="$(MSBuildThisFileDirectory)CustomControl\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Global_Method_Propertise\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Data\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Helpers\" />
+    <Folder Include="$(MSBuildThisFileDirectory)DependencyServices\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Renderer\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Data\LockDatabase\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">                                                                                                                                                                                                                                                                          
+        <item
+            android:id="@+id/nav_takeAttandance"
+            android:title="Take Attandance" 
+            android:icon="@drawable/takea"
+            />
+      
+        <item
+            android:id="@+id/nav_showAddandance"
+            android:title="Show Attandance"
+            android:icon="@drawable/ShowAttendance" />
+        <item
+            android:id="@+id/nav_showTimeTable"
+            android:title="Show Time Table"
+            android:icon="@drawable/notice"
+            />
+       <item
+            android:id="@+id/nav_syncDta"
+            android:title="Sync Data"
+            android:icon="@drawable/sync"
+            />
+      <item
+            android:id="@+id/nav_logOut"
+            android:title="Log Out"
+            android:icon="@drawable/logout"
+            />
+      <!--Add Another Menu-->
+      
+      <!--end-->
+    </group>
+</menu>

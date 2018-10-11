@@ -1,0 +1,71 @@
+﻿<Properties StartupConfiguration="{34546C62-E10C-44FB-BED0-B6ED225DFF87}|Default">
+  <MonoDevelop.Ide.ItemProperties.DVidyaERP.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DVidyaERP/Helpers/GeneralMethod.cs">
+    <Files>
+      <File FileName="DVidyaERP/Pages/LogInPage.xaml" Line="106" Column="1" />
+      <File FileName="DVidyaERP/Pages/LogInPage.xaml.cs" Line="167" Column="48" />
+      <File FileName="DVidyaERP/ViewModels/ConfigruePageViewModel.cs" Line="41" Column="17" />
+      <File FileName="DVidyaERP/Helpers/GeneralMethod.cs" Line="400" Column="18" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/ViewModels/TimeTableGroup.cs" relfile="DVidyaERP/ViewModels/TimeTableGroup.cs" line="194" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/ViewModels/GetStudentsPopUpViewModel.cs" relfile="DVidyaERP/ViewModels/GetStudentsPopUpViewModel.cs" line="215" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/ViewModels/TimeTableGroup.cs" relfile="DVidyaERP/ViewModels/TimeTableGroup.cs" line="337" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/ViewModels/TakeAttendanceViewModel.cs" relfile="DVidyaERP/ViewModels/TakeAttendanceViewModel.cs" line="184" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Pages/NoticePage.xaml.cs" relfile="DVidyaERP/Pages/NoticePage.xaml.cs" line="21" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/Droid/DependencyService_Android/IDependencyServiceForAutoRun.cs" relfile="Droid/DependencyService_Android/IDependencyServiceForAutoRun.cs" line="107" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Data/DVidyaDataBase.cs" relfile="DVidyaERP/Data/DVidyaDataBase.cs" line="1157" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Helpers/GeneralMethod.cs" relfile="DVidyaERP/Helpers/GeneralMethod.cs" line="728" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Data/DVidyaDataBase.cs" relfile="DVidyaERP/Data/DVidyaDataBase.cs" line="1234" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Helpers/GeneralMethod.cs" relfile="DVidyaERP/Helpers/GeneralMethod.cs" line="314" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Style/SettingsUserView.cs" relfile="DVidyaERP/Style/SettingsUserView.cs" line="110" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Helpers/GeneralMethod.cs" relfile="DVidyaERP/Helpers/GeneralMethod.cs" line="644" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Data/DVidyaDataBase.cs" relfile="DVidyaERP/Data/DVidyaDataBase.cs" line="1320" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Data/DVidyaDataBase.cs" relfile="DVidyaERP/Data/DVidyaDataBase.cs" line="1324" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Data/DVidyaDataBase.cs" relfile="DVidyaERP/Data/DVidyaDataBase.cs" line="729" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/Droid/Helpers/Picture.cs" relfile="Droid/Helpers/Picture.cs" line="42" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/Droid/Helpers/Picture.cs" relfile="Droid/Helpers/Picture.cs" line="68" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Pages/LogInPage.xaml.cs" relfile="DVidyaERP/Pages/LogInPage.xaml.cs" line="109" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Data/DVidyaDataBase.cs" relfile="DVidyaERP/Data/DVidyaDataBase.cs" line="1243" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/ViewModels/ProfileViewModel.cs" relfile="DVidyaERP/ViewModels/ProfileViewModel.cs" line="145" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Helpers/GeneralMethod.cs" relfile="DVidyaERP/Helpers/GeneralMethod.cs" line="433" column="6" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/ViewModels/ProfileViewModel.cs" relfile="DVidyaERP/ViewModels/ProfileViewModel.cs" line="211" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Data/DVidyaDataBase.cs" relfile="DVidyaERP/Data/DVidyaDataBase.cs" line="835" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Helpers/GeneralMethod.cs" relfile="DVidyaERP/Helpers/GeneralMethod.cs" line="308" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Helpers/GeneralMethod.cs" relfile="DVidyaERP/Helpers/GeneralMethod.cs" line="303" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Helpers/GeneralMethod.cs" relfile="DVidyaERP/Helpers/GeneralMethod.cs" line="298" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/ViewModels/ProfileViewModel.cs" relfile="DVidyaERP/ViewModels/ProfileViewModel.cs" line="196" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/ViewModels/ProfileViewModel.cs" relfile="DVidyaERP/ViewModels/ProfileViewModel.cs" line="220" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Helpers/GeneralMethod.cs" relfile="DVidyaERP/Helpers/GeneralMethod.cs" line="751" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Helpers/GeneralMethod.cs" relfile="DVidyaERP/Helpers/GeneralMethod.cs" line="757" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/ViewModels/ProfileViewModel.cs" relfile="DVidyaERP/ViewModels/ProfileViewModel.cs" line="391" column="23" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Pages/ProfilePage.xaml.cs" relfile="DVidyaERP/Pages/ProfilePage.xaml.cs" line="71" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Pages/TimeTablePage.xaml.cs" relfile="DVidyaERP/Pages/TimeTablePage.xaml.cs" line="30" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Pages/TimeTablePage.xaml.cs" relfile="DVidyaERP/Pages/TimeTablePage.xaml.cs" line="68" column="20" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Data/DVidyaDataBase.cs" relfile="DVidyaERP/Data/DVidyaDataBase.cs" line="381" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Data/DVidyaDataBase.cs" relfile="DVidyaERP/Data/DVidyaDataBase.cs" line="496" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Data/DVidyaDataBase.cs" relfile="DVidyaERP/Data/DVidyaDataBase.cs" line="520" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Data/DVidyaDataBase.cs" relfile="DVidyaERP/Data/DVidyaDataBase.cs" line="544" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Data/DVidyaDataBase.cs" relfile="DVidyaERP/Data/DVidyaDataBase.cs" line="571" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Data/DVidyaDataBase.cs" relfile="DVidyaERP/Data/DVidyaDataBase.cs" line="593" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Data/DVidyaDataBase.cs" relfile="DVidyaERP/Data/DVidyaDataBase.cs" line="633" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Data/DVidyaDataBase.cs" relfile="DVidyaERP/Data/DVidyaDataBase.cs" line="667" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Data/DVidyaDataBase.cs" relfile="DVidyaERP/Data/DVidyaDataBase.cs" line="692" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Data/DVidyaDataBase.cs" relfile="DVidyaERP/Data/DVidyaDataBase.cs" line="752" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Helpers/GeneralMethod.cs" relfile="DVidyaERP/Helpers/GeneralMethod.cs" line="381" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Data/DVidyaDataBase.cs" relfile="DVidyaERP/Data/DVidyaDataBase.cs" line="459" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/ViewModels/TakeAttendanceViewModel.cs" relfile="DVidyaERP/ViewModels/TakeAttendanceViewModel.cs" line="138" column="1" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/ViewModels/TakeAttendanceViewModel.cs" relfile="DVidyaERP/ViewModels/TakeAttendanceViewModel.cs" line="145" column="28" />
+      <Breakpoint file="/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP/Data/DVidyaDataBase.cs" relfile="DVidyaERP/Data/DVidyaDataBase.cs" line="884" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="DVidyaERP/Helpers/GeneralMethod.cs" line="128" offsetX="897" offsetY="2032" expression="loginR.DeviceID" liveUpdate="False" />
+    <Watch file="DVidyaERP/Helpers/GeneralMethod.cs" line="132" offsetX="762" offsetY="2096" expression="loginR.DeviceID" liveUpdate="True" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.ItemProperties.DVidyaERP.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.54518D45-4007-4E37-B916-00452305096D" automaticSigning="False" />
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="DVidyaERP.LogInPage"
+    xmlns:local="clr-namespace:DVidyaERP"
+    xmlns:control="clr-namespace:DVidyaERP.CustomControl"
+    BackgroundImage="ERPbackground.jpg"
+    NavigationPage.HasNavigationBar="False">
+    
+	<ContentPage.Content>
+         <Grid RowSpacing="10">
+      <Grid.RowDefinitions>
+          <RowDefinition Height="*" />
+          <RowDefinition Height="50"/>
+          <RowDefinition Height="50" />
+          <RowDefinition Height="50" />
+          <RowDefinition Height="70" />
+          <RowDefinition Height="50" />
+          <RowDefinition Height="50" />
+          <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+              <Image BackgroundColor="Transparent" 
+                Source="logo"   
+                Aspect="AspectFit" />
+            <Label Text="WELCOME" FontAttributes="Bold"  FontSize="30" 
+             TextColor="White" HorizontalOptions="CenterAndExpand" 
+             Grid.Row="1" Grid.Column="0" >
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS">Rockwell-Light</On>
+                            <On Platform="Android">RCKWLL.ttf#RCKWLL</On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+            </Label>
+            <Entry Text="{Binding Email}" x:Name="entryEmail" Keyboard="Email"  Placeholder="Email.." BackgroundColor="Transparent" 
+            Grid.Row="2" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" TextColor="White" WidthRequest="300" HeightRequest="40"
+            FontSize="14" PlaceholderColor="Black">
+                <Entry.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS">Maison Neue</On>
+                            <On Platform="Android">MAISONNEUE-BOOK.TTF#MAISONNEUE-BOOK</On>
+                        </OnPlatform>
+                    </Entry.FontFamily>
+                 <Entry.Effects>
+               <local:ShowHidePassEffect/>
+            </Entry.Effects>
+             <Entry.Behaviors>
+            <local:EmailValidatorBehavior/>
+            </Entry.Behaviors>
+            </Entry>
+            <Entry Text="{Binding Password}" x:Name="entryPassword" Keyboard="Default" IsPassword="true" Placeholder="Password.." BackgroundColor="Transparent"
+            HorizontalOptions="CenterAndExpand" VerticalOptions="Center" TextColor="White" WidthRequest="300" HeightRequest="40"
+            Grid.Row="3" Grid.Column="0" FontSize="14" PlaceholderColor="Black">
+            <Entry.Effects>
+               <local:ShowHidePassEffect/>
+            </Entry.Effects>
+                <Entry.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS">Maison Neue</On>
+                            <On Platform="Android">MAISONNEUE-BOOK.TTF#MAISONNEUE-BOOK</On>
+                        </OnPlatform>
+                </Entry.FontFamily>
+           <!-- <Entry.Behaviors>
+            <local:PasswordValidationBehavior/>
+            </Entry.Behaviors>-->
+                
+            </Entry>
+            <Label Text="            Please choose User Type here :" FontSize="12" TextColor="Black" Grid.Row="4" Grid.Column="0">
+            <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS">Maison Neue</On>
+                            <On Platform="Android">MAISONNEUE-BOOK.TTF#MAISONNEUE-BOOK</On>
+                        </OnPlatform>
+             </Label.FontFamily>
+            </Label>
+            <control:CustomPicker SelectedIndex="{Binding UserType}" x:Name="pickerUserType" Title="User Type" Grid.Row="4" Grid.Column="0" TextColor="Black" WidthRequest="300" 
+                VerticalOptions="Center"   HorizontalOptions="CenterAndExpand" Image="ic_arrow_drop_down_white_24dp" >
+            </control:CustomPicker>
+            <Button Command="{Binding SubmitCommand}" x:Name="btnLogIn" BackgroundColor="#EA3175" BorderWidth="1" 
+                BorderColor="White"  BorderRadius="20" TextColor="White" 
+                Text="LogIn"
+                WidthRequest="300" FontSize="14"
+                    HorizontalOptions="Center" Grid.Row="5" Grid.Column="0">
+                  <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS">Maison Neue</On>
+                            <On Platform="Android">MAISONNEUE-BOOK.TTF#MAISONNEUE-BOOK</On>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+
+            <Label x:Name="lblBack" Text="⇦ Back In Connection Page" Margin="0,10" HorizontalOptions="CenterAndExpand" TextColor="#EA3175" Grid.Row="6" Grid.Column="0" >
+            <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS">Maison Neue</On>
+                            <On Platform="Android">MAISONNEUE-BOOK.TTF#MAISONNEUE-BOOK</On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+            </Label>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

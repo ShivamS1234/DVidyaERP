@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="DVidyaERP.connectionPage"
+    xmlns:local="clr-namespace:DVidyaERP"
+    BackgroundImage="ERPbackground.jpg"
+    NavigationPage.HasNavigationBar="False"
+    >
+	<ContentPage.Content>
+     <Grid RowSpacing="10">
+      <Grid.RowDefinitions>
+          <RowDefinition Height="*" />
+          <RowDefinition Height="50" />
+          <RowDefinition Height="50" />
+          <RowDefinition Height="50" />
+          <RowDefinition Height="50" />
+          <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+              <Image BackgroundColor="Transparent" 
+                Source="logo"   
+                Aspect="AspectFit" />
+            <Label Text="WELCOME" FontAttributes="Bold"  FontSize="30" 
+             TextColor="White" HorizontalOptions="CenterAndExpand" 
+             Grid.Row="1" Grid.Column="0" >
+                 <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS">Rockwell-Light</On>
+                            <On Platform="Android">RCKWLL.ttf#RCKWLL</On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+            </Label>
+            <Entry x:Name="entryIPAdress" Text="{Binding IPAddress}" Keyboard="Default"  Placeholder="Enter the IP.." BackgroundColor="Transparent" 
+            Grid.Row="2" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" TextColor="White" WidthRequest="300" HeightRequest="40"
+            FontSize="14" PlaceholderColor="Black">
+            <Entry.Effects>
+               <local:ShowHidePassEffect/>
+            </Entry.Effects>
+                <Entry.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS">Maison Neue</On>
+                            <On Platform="Android">MAISONNEUE-BOOK.TTF#MAISONNEUE-BOOK</On>
+                        </OnPlatform>
+                </Entry.FontFamily>
+            <!--<Entry.Behaviors>
+            <local:EmailValidatorBehavior/>
+            </Entry.Behaviors>-->
+            </Entry>
+            <Entry x:Name="entryPort" Text="{Binding Port}" Keyboard="Numeric" Placeholder="Enter the Port.." BackgroundColor="Transparent"
+                HorizontalOptions="CenterAndExpand" TextColor="White" WidthRequest="300" HeightRequest="40"
+            Grid.Row="3" Grid.Column="0" VerticalOptions="Center" FontSize="14" PlaceholderColor="Black">
+            <Entry.Effects>
+               <local:ShowHidePassEffect/>
+            </Entry.Effects>
+                <Entry.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS">Maison Neue</On>
+                            <On Platform="Android">MAISONNEUE-BOOK.TTF#MAISONNEUE-BOOK</On>
+                        </OnPlatform>
+                 </Entry.FontFamily>
+            <Entry.Behaviors>
+            <local:NumberValidationBehavior/>
+            </Entry.Behaviors>
+            </Entry>
+            <Button x:Name="btnConnect" Command="{Binding SubmitCommand}" BackgroundColor="#EA3175" BorderWidth="1" 
+                BorderColor="White"  BorderRadius="20" TextColor="White" 
+                Text="Connect"
+                WidthRequest="300" FontSize="14"
+                    HorizontalOptions="Center" Grid.Row="4" Grid.Column="0">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS">Maison Neue</On>
+                            <On Platform="Android">MAISONNEUE-BOOK.TTF#MAISONNEUE-BOOK</On>
+                        </OnPlatform>
+                    </Button.FontFamily>
+            </Button>
+        </Grid>
+	</ContentPage.Content>
+</ContentPage>

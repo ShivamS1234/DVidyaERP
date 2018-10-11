@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+             x:Class="DVidyaERP.GetStudentsPagePopUp"
+             xmlns:control="clr-namespace:DVidyaERP.CustomControl">
+    
+  <pages:PopupPage.Resources>
+  </pages:PopupPage.Resources>
+  <pages:PopupPage.Animation>
+    <animations:ScaleAnimation
+      PositionIn="Bottom"
+      PositionOut="Center"
+      ScaleIn="1"
+      ScaleOut="0.7"
+      DurationIn="700"
+      EasingIn="BounceOut"
+        />
+  </pages:PopupPage.Animation>
+  <ScrollView
+    HorizontalOptions="Center"
+    VerticalOptions="Center">
+    <AbsoluteLayout>
+      <Frame
+        x:Name="FrameContainer"
+        Margin="15"
+        Padding="0,0,0,20"
+        HorizontalOptions="Center"
+        BackgroundColor="Silver">
+                
+        <StackLayout
+            IsClippedToBounds="true"
+            >
+          <StackLayout Orientation="Horizontal" HeightRequest="70"  BackgroundColor="#F8A51B"  HorizontalOptions="FillAndExpand">
+            <Label Text="Class Details" FontSize="20" TextColor="White" VerticalOptions="Center"   HorizontalOptions="CenterAndExpand">
+              <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                  <On Platform="iOS">Rockwell-Light</On>
+                  <On Platform="Android">RCKWLL.ttf#RCKWLL</On>
+                </OnPlatform>
+              </Label.FontFamily>
+            </Label>
+          </StackLayout>
+          <StackLayout  VerticalOptions="Center" Margin="10,2,10,0" Orientation="Vertical" HorizontalOptions="CenterAndExpand"
+             BackgroundColor="Transparent">
+            <Label Text="Please choose Class here :" FontSize="8" TextColor="Black">
+            <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS">Maison Neue</On>
+                            <On Platform="Android">MAISONNEUE-BOOK.TTF#MAISONNEUE-BOOK</On>
+                        </OnPlatform>
+             </Label.FontFamily>
+            </Label>
+            <control:CustomPicker  x:Name="pickerClass" ItemDisplayBinding="{Binding Name}" ItemsSource="{Binding ClassNameList}" SelectedItem="{Binding ClassName, Mode=TwoWay}" WidthRequest="200" Title="Class"  TextColor="Black"
+                VerticalOptions="Center"   HorizontalOptions="CenterAndExpand" Image="ic_arrow_drop_down_white_24dp" >
+            </control:CustomPicker>
+          </StackLayout>
+           <StackLayout  VerticalOptions="Center" Margin="10,2,10,0"   HorizontalOptions="CenterAndExpand"
+             BackgroundColor="Transparent" Orientation="Vertical">
+            <Label Text="Please choose Stream here :" FontSize="8" TextColor="Black">
+            <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS">Maison Neue</On>
+                            <On Platform="Android">MAISONNEUE-BOOK.TTF#MAISONNEUE-BOOK</On>
+                        </OnPlatform>
+             </Label.FontFamily>
+            </Label>
+            <control:CustomPicker  x:Name="pickerStream" ItemDisplayBinding="{Binding Name}" ItemsSource="{Binding StreamNameList}" SelectedItem="{Binding StreamName, Mode=TwoWay}" WidthRequest="200" Title="Stream"  TextColor="Black"
+                VerticalOptions="Center"   HorizontalOptions="CenterAndExpand" Image="ic_arrow_drop_down_white_24dp" >
+            </control:CustomPicker>
+          </StackLayout>
+          <StackLayout  VerticalOptions="Center" Margin="10,2,10,0"   HorizontalOptions="CenterAndExpand"
+             BackgroundColor="Transparent" Orientation="Vertical">
+            <Label Text="Please choose Section here :" FontSize="8" TextColor="Black" >
+            <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS">Maison Neue</On>
+                            <On Platform="Android">MAISONNEUE-BOOK.TTF#MAISONNEUE-BOOK</On>
+                        </OnPlatform>
+             </Label.FontFamily>
+            </Label>
+            <control:CustomPicker  x:Name="pickerSection" ItemDisplayBinding="{Binding Name}" ItemsSource="{Binding SectionNameList}" SelectedItem="{Binding SectionName, Mode=TwoWay}" WidthRequest="200" Title="Section" TextColor="Black" 
+                VerticalOptions="Center"   HorizontalOptions="CenterAndExpand" Image="ic_arrow_drop_down_white_24dp" >
+            </control:CustomPicker>
+          </StackLayout>
+          <StackLayout VerticalOptions="Center"   HorizontalOptions="CenterAndExpand" Orientation="Vertical">
+            <!--here write code of button -->
+            <Button x:Name="btnOK" BackgroundColor="#F8A51B" Command="{Binding SubmitCommand}"
+             Margin="0,10,0,0"
+             BorderWidth="1" 
+             BorderColor="White"  
+             BorderRadius="20" 
+             TextColor="White"
+             Text="Okay"
+             FontSize="14"
+            WidthRequest="200"
+          HorizontalOptions="Center">
+              <Button.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                  <On Platform="iOS">Maison Neue</On>
+                  <On Platform="Android">MAISONNEUE-BOOK.TTF#MAISONNEUE-BOOK</On>
+                </OnPlatform>
+              </Button.FontFamily>
+            </Button>
+          </StackLayout>
+        </StackLayout>
+      </Frame>
+                  <Frame x:Name="frameClose"
+             AbsoluteLayout.LayoutFlags="PositionProportional" Padding="0"
+          AbsoluteLayout.LayoutBounds="1, 0, -1, -1" BackgroundColor="Transparent"
+         >
+        <ContentView.GestureRecognizers>
+          <TapGestureRecognizer Tapped="OnCloseButtonTapped"/>
+        </ContentView.GestureRecognizers>
+        <Image
+          x:Name="CloseImage"
+          HeightRequest="30"
+          WidthRequest="30" >
+          <Image.Source>
+            <OnPlatform
+              x:TypeArguments="ImageSource"
+              Android="closecirclebutton.png"
+              iOS="closecirclebutton.png" />
+          </Image.Source>
+        </Image>
+        </Frame>
+    </AbsoluteLayout>
+  </ScrollView>
+</pages:PopupPage>
