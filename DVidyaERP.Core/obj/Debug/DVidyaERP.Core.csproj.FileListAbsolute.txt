@@ -1,9 +1,0 @@
-/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP.Core/bin/Debug/DVidyaERP.Core.dll
-/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP.Core/bin/Debug/DVidyaERP.Core.pdb
-/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP.Core/bin/Debug/Newtonsoft.Json.dll
-/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP.Core/bin/Debug/SQLite.Net.dll
-/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP.Core/bin/Debug/Newtonsoft.Json.xml
-/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP.Core/obj/Debug/DVidyaERP.Core.csproj.CoreCompileInputs.cache
-/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP.Core/obj/Debug/DVidyaERP.Core.dll
-/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP.Core/obj/Debug/DVidyaERP.Core.pdb
-/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP.Core/obj/Debug/DVidyaERP.Core.csprojResolveAssemblyReference.cache

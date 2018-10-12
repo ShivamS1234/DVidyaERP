@@ -9,8 +9,8 @@ using DVidyaERP.DependencyServices;
 using Xamarin.Forms;
 using DVidyaERP.iOS.DependencyService_iOS;
 using SystemConfiguration;
-using BigTed;
-using static BigTed.ProgressHUD;
+//using BigTed;
+//using static BigTed.ProgressHUD;
 using System.IO;
 
 namespace DVidyaERP.iOS.DependencyService_iOS

@@ -8,11 +8,15 @@ using DVidyaERP;
 using DVidyaERP.Global_Method_Propertise;
 using DVidyaERP.Helpers;
 using DVidyaERP.Core.Models.Tables;
+#if __ANDROID__
 using Plugin.Media;
-using Plugin.Settings;
-using Xamarin.Forms;
 using Plugin.Permissions;
 using Plugin.Permissions.Abstractions;
+#endif
+
+using Plugin.Settings;
+using Xamarin.Forms;
+
 using DVidyaERP.Core.Services.Request;
 //using Xamarin.Media;
 
@@ -95,7 +99,7 @@ namespace DVidyaERP
         }
         //end
 
-        #region declare_here_event
+#region declare_here_event
         //when we click on the edit command 
         public ICommand EditCommand { protected set; get; }
         public void OnEditCommand()
@@ -402,6 +406,6 @@ namespace DVidyaERP
             return false;
         }
 
-        #endregion
+#endregion
     }
 }

@@ -1,6 +1,0 @@
-/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP.Core/bin/Release/DVidyaERP.Core.dll
-/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP.Core/bin/Release/Newtonsoft.Json.dll
-/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP.Core/bin/Release/SQLite.Net.dll
-/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP.Core/bin/Release/Newtonsoft.Json.xml
-/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP.Core/obj/Release/DVidyaERP.Core.csproj.CoreCompileInputs.cache
-/Users/vinaytiwari/Documents/DVidya/DVidyaERP/DVidyaERP.Core/obj/Release/DVidyaERP.Core.dll
